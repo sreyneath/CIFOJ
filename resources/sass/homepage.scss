@@ -1,0 +1,272 @@
+.home-page {
+    .container01 {
+        background-color: white;
+
+        .wrapper {
+            padding   : 40px 0;
+            box-sizing: border-box;
+
+            .item-content {
+                display   : flex;
+                flex-wrap : wrap;
+                margin    : 0 -10px;
+                box-sizing: border-box;
+
+                .item {
+                    width           : calc(100% / 3 - 30px);
+                    // margin: 10px;
+                    box-sizing      : border-box;
+                    margin          : 10px;
+                    display         : flex;
+                    justify-content : space-between;
+                    background-color: #ffffff;
+                    padding         : 5px;
+                    box-shadow      : 0 0px 5px rgb(0 0 0 / 5%);
+
+                    &:hover {
+                        transition: 0.3s;
+                        box-shadow: 0 3px 3px rgb(0 0 0 / 20%);
+                    }
+
+                    .container {
+                        display: flex;
+
+                        .image {
+                            margin-right: 10px;
+                            box-sizing  : border-box;
+
+                            img {
+                                width: 75px;
+
+                            }
+                        }
+
+                        .description {
+                            // flex: auto;
+
+                            p {
+                                margin   : 25px 0;
+                                font-size: 16px;
+                                color    : #717070;
+                                @include subString(4);
+                                box-sizing: border-box;
+                            }
+
+                            h2 {
+                                font-weight   : 600;
+                                text-transform: uppercase;
+                                margin        : 5px 0;
+                                color         : #1e122f;
+                                box-sizing    : border-box;
+                            }
+
+                            h1 {
+                                cursor            : pointer;
+                                font-family       : "Open Sans", sans-serif;
+                                // font-weight    : 600;
+                                color             : #3182ae;
+                                background        : none;
+                                font-size         : 18px;
+                                padding           : 0;
+                                text-decoration   : none;
+                                box-sizing        : border-box;
+                                margin            : 5px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .container02 {
+        margin          : 20px 0;
+        padding         : 40px 0;
+        box-sizing      : border-box;
+        background-color: white;
+
+        .title {
+            h1 {
+                text-align : center;
+                font-family: "Merriweather", serif;
+                color      : #717070;
+
+                strong {
+                    box-sizing : border-box;
+                    margin     : 0 10px;
+                    color      : #3182ae;
+                    font-family: "Open Sans", sans-serif;
+                }
+            }
+        }
+
+        .underline {
+            border-bottom: 2px solid #3182ae;
+            position     : relative;
+            box-sizing   : border-box;
+        }
+    }
+
+    .container03 {
+        margin: 20px 0;
+
+        .image {
+            position: relative;
+            overflow: hidden;
+            width   : 100%;
+            height  : 740px;
+
+            img {
+                width             : 100%;
+                height            : 100%;
+                -o-object-fit     : cover;
+                object-fit        : cover;
+                -o-object-position: top;
+                object-position   : top;
+            }
+
+            .container {
+                max-width : unset !important;
+                position  : absolute;
+                left      : 0;
+                top       : 0;
+                right     : 0;
+                height    : 100%;
+                opacity   : 0.9;
+                z-index   : 1;
+                background: #000000c4;
+                transition: all 0.3s ease;
+                overflow  : hidden;
+
+                .title {
+                    text-align: center;
+                    color     : #717070;
+
+                    h1 {
+                        font-family: 'Merriweather', serif;
+                    }
+
+                    strong {
+                        font-family: "Open Sans", sans-serif;
+                        color      : #3182ae;
+                        margin     : 0 10px;
+                    }
+                }
+
+                .contact-content {
+                    width: 100%;
+
+                    .contact-list {
+
+                        display  : flex;
+                        flex-wrap: wrap;
+                        margin   : 0 -10px;
+
+                        .item {
+                            width           : calc(100% / 3 - 20px);
+                            box-sizing      : border-box;
+                            margin          : 10px;
+                            display         : flex;
+                            flex-direction  : column;
+                            justify-content : center;
+                            background-color: whitesmoke;
+                            padding         : 10px;
+                            align-items     : center;
+
+                            i {
+                                font-size    : 35px;
+                                color        : #3182ae;
+                                // margin-top: 25px;
+                            }
+
+                            h2 {
+                                color : #717070;
+                                margin: 10px 0;
+                            }
+
+                            h4 {
+                                text-align : center;
+                                color      : #3182ae;
+                                margin     : 5px 0;
+                                font-family: "Merriweather", serif;
+                            }
+                        }
+                    }
+
+                    .form {
+                        border    : 1px solid #dedcd6;
+                        padding   : 50px;
+                        box-sizing: border-box;
+
+                        .inside {
+                            display        : flex;
+                            justify-content: space-between;
+                            height         : 200px;
+
+                            .user {
+                                display          : flex;
+                                flex-direction   : column;
+                                width            : 500px;
+                                // margin-right  : 40px;
+                                box-sizing       : border-box;
+                                height           : 100%;
+                                justify-content  : space-between;
+
+                                input {
+                                    border     : 1px solid #dedcd6;
+                                    font-family: "Merriweather", serif;
+                                    padding    : 15px;
+                                }
+
+                            }
+
+                            .message {
+                                width: 550px;
+
+                                textarea {
+                                    width      : 100%;
+                                    height     : 100%;
+                                    order      : 1px solid #dedcd6;
+                                    font-family: "Merriweather", serif;
+                                    padding    : 15px;
+                                    box-sizing : border-box;
+                                }
+                            }
+                        }
+
+                        .send {
+                            display        : flex;
+                            justify-content: center;
+
+                            button {
+                                background   : none;
+                                border       : none;
+                                cursor       : pointer;
+                                position     : relative;
+                                transition   : ease-out 0.3s;
+                                z-index      : 1;
+                                border-radius: 25px;
+                                width        : 150px;
+                                margin-top   : 30px;
+                                margin-top   : 36px;
+                                padding      : 10px;
+                                font-size    : 20px;
+                                color        : #3182ae;
+                                border       : 1px solid #3182ae;
+                                font-size    : 16px;
+
+                                &:hover {
+                                    background-color   : #1e122f;
+                                    // transition      : ease-out 0.3s;
+                                    transition         : 0.5s all ease;
+                                    left               : 0;
+                                    right              : 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

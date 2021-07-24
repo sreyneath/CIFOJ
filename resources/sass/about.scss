@@ -1,0 +1,58 @@
+.about {
+    .about-container {
+        background-color: white;
+
+        .container {
+            padding   : 40px 0;
+            box-sizing: border-box;
+
+
+            .content-title {
+                border-bottom: 2px solid #3182ae;
+                position     : relative;
+                box-sizing   : border-box;
+
+                button {
+                    background                : none;
+                    border                    : none;
+                    cursor                    : pointer;
+                    // font-family     : "Open Sans", sans-serif;
+                    font-weight               : 600;
+                    height                    : 51px;
+                    padding                   : 0;
+                    font-size                 : 30px;
+                    width                     : 300px;
+                    background-color          : #3182ae;
+                    color                     : white;
+                    border-bottom-right-radius: 0;
+                    border-bottom-left-radius : 0;
+                    box-sizing                : border-box;
+                }
+
+                .corner {
+                    position    : absolute;
+                    top         : 0;
+                    left        : 300px;
+                    width       : 0;
+                    height      : 0;
+                    border-style: solid;
+                    border-width: 51px 0 0 30px;
+                    box-sizing  : border-box;
+                    border-color: transparent transparent transparent #3182ae;
+                }
+            }
+
+
+            .content-text {
+                font-family: "Merriweather", serif;
+                font-size  : 16px;
+                color      : #717070;
+                font-weight: 400;
+
+                p {
+                    margin: 15px 0;
+                }
+            }
+        }
+    }
+}
